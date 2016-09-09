@@ -49,7 +49,7 @@ public class adventuregame {
 		switch (sharksTeeth){
 		
 		case "red":
-		System.out.println("You decide fighting the sharks is a bad idea, so you grab the fin of a dolphin and tell "
+		System.out.println("You, " + enteredName + " decide fighting the sharks is a bad idea, so you grab the fin of a dolphin and tell "
 				+ "it to pull you to safety. "
 				+ "You name the dolphin ____________.(enter a name)");	
 		Scanner sc5 = new Scanner(System.in);
@@ -60,7 +60,7 @@ System.out.println( "You live your life wondering what would of happened if you 
 		break;
 
 		case "white":
-			System.out.println("You fight the sharks with " + yourWeapon + " and kill all of them, except one. "
+			System.out.println("You, " + enteredName + " fight the sharks with " + yourWeapon + " and kill all of them, except one. "
 					+ "Of course, you didn't see that one, but he doesn't want to eat you anyways and swims away. "
 					+ "You name the shark ____________.(enter a name)");	
 			Scanner sc6 = new Scanner(System.in);
