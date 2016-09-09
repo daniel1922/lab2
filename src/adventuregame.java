@@ -32,10 +32,17 @@ public class adventuregame {
 		break;
 		
 		case "face the sharks":
-		System.out.println("You swim towards the sharks. You see there are __ number of sharks (enter\"1\" or \"2\" or \"3\"):");
+		System.out.println("You swim towards the sharks. You see there are __ number of sharks (enter\"10\" or \"20\" or \"30\"):");
 		int Number = sc1.nextInt();				
 		System.out.println("You have never seen " + Number + "sharks this close before! You decide to fight.");
 		System.out.println("Choose your weapon!(enter \"speargun\" or \"fist\" or \"bomb\")");
 }
 
+		Scanner sc3 = new Scanner(System.in);
+		String yourWeapon = sc3.nextLine();	
+		System.out.println("You swim to the sharks with " + yourWeapon + " in hand.");
+		System.out.println("They stare at you with their ______ teeth. (enter \"red\" or \"white\")");
+		
+		Scanner sc4 = new Scanner(System.in);
+		String dragonEye = sc4.nextLine();
 }
