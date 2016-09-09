@@ -41,8 +41,30 @@ public class adventuregame {
 		Scanner sc3 = new Scanner(System.in);
 		String yourWeapon = sc3.nextLine();	
 		System.out.println("You swim to the sharks with " + yourWeapon + " in hand.");
-		System.out.println("They stare at you with their ______ teeth. (enter \"red\" or \"white\")");
+		System.out.println("They stare at you with their _____________ teeth. (enter \"red\" or \"white\")");
 		
 		Scanner sc4 = new Scanner(System.in);
-		String dragonEye = sc4.nextLine();
+		String sharksTeeth = sc4.nextLine();
+		
+		switch (sharksTeeth){
+		
+		case "red":
+		System.out.println("You decide fighting the sharks is a bad idea, so you grab the fin of a dolphin and tell "
+				+ "it to pull you to safety. You name the dolphin ____________.(enter a name)");	
+		Scanner sc5 = new Scanner(System.in);
+
+		String dolphinName = sc5.nextLine();
+System.out.println( "You live your life wondering what would of happened if you decided to fight the sharks and not"
+				+ "catch a ride on " + dolphinName + "." );
+		
+		case "white":
+			System.out.println("You fight the sharks with " + yourWeapon + "and kill all of them, but one. "
+					+ "Of course, you didn't see that one, but he doesn't want to eat you anyways and swims away. "
+					+ "You name the shark ____________.(enter a name)");	
+			Scanner sc6 = new Scanner(System.in);
+			
+		String sharkName = sc6.nextLine();
+System.out.println("You live your life believing the stupidest thing you ever did was fight sharks. You always remember"
+		+ sharkName + "that could of eaten you for killing all his friends and family.");
+		
 }
