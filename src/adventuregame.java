@@ -17,12 +17,12 @@ public class adventuregame {
 		switch (enteredGameAnswer){
 		
 		case "1":
-		System.out.println("You decide to sit on the beach, but after an hour a unexpected tidal wave comes and kills you");	
+		System.out.println("You decide to sit on the beach, but after an hour a unexpected tidal wave comes and kills you.");	
 		break;
 
 		case "2":
 		System.out.println("You swim towards the dolphins only to realize there are also a group of sharks."
-				+ "What would you do??(enter \"face the sharks\" or \"swim away\")");
+				+ " What would you do??(enter \"face the sharks\" or \"swim away\")");
 		String faceOrSwim = sc1.nextLine();
 	
 		switch (faceOrSwim){
@@ -34,7 +34,7 @@ public class adventuregame {
 		case "face the sharks":
 		System.out.println("You swim towards the sharks. You see there are __ number of sharks (enter\"10\" or \"20\" or \"30\"):");
 		int Number = sc1.nextInt();				
-		System.out.println("You have never seen " + Number + "sharks this close before! You decide to fight.");
+		System.out.println("You have never seen " + Number + " sharks this close before! You decide to fight.");
 		System.out.println("Choose your weapon!(enter \"speargun\" or \"fist\" or \"bomb\")");
 }
 
@@ -50,15 +50,17 @@ public class adventuregame {
 		
 		case "red":
 		System.out.println("You decide fighting the sharks is a bad idea, so you grab the fin of a dolphin and tell "
-				+ "it to pull you to safety. You name the dolphin ____________.(enter a name)");	
+				+ "it to pull you to safety. "
+				+ "You name the dolphin ____________.(enter a name)");	
 		Scanner sc5 = new Scanner(System.in);
 
 		String dolphinName = sc5.nextLine();
 System.out.println( "You live your life wondering what would of happened if you decided to fight the sharks and not"
-				+ "catch a ride on " + dolphinName + "." );
-		
+				+ " catch a ride on " + dolphinName + "." );
+		break;
+
 		case "white":
-			System.out.println("You fight the sharks with " + yourWeapon + "and kill all of them, but one. "
+			System.out.println("You fight the sharks with " + yourWeapon + " and kill all of them, except one. "
 					+ "Of course, you didn't see that one, but he doesn't want to eat you anyways and swims away. "
 					+ "You name the shark ____________.(enter a name)");	
 			Scanner sc6 = new Scanner(System.in);
@@ -67,4 +69,13 @@ System.out.println( "You live your life wondering what would of happened if you 
 System.out.println("You live your life believing the stupidest thing you ever did was fight sharks. You always remember"
 		+ sharkName + "that could of eaten you for killing all his friends and family.");
 		
+sc.close();
+sc1.close();
+sc3.close();
+
+}
+
+}	
+
+}
 }
